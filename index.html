@@ -20,6 +20,7 @@
         .navbar{
             background-color: red;
             width: 400px;
+            height: 80vh;
             margin: 0 auto;
             position: relative;
         }
@@ -36,6 +37,17 @@
             left: -100%;
             display: none;
             visibility: hidden;
+            transition: all linear 1s ease-out;
+            transition-duration: 3s;
+        }
+        .active{
+            left: 0 !important;
+            width: 80% !important;
+            position: relative;
+            transition: all linear 1s ease-in-out;
+            display: flex !important;
+            visibility: visible !important;
+            transition-duration: 2s;
         }
         
         .navbar ul li a{
@@ -67,7 +79,7 @@
 <body>
     
 <div class="navbar">
-    <ul>
+    <ul class="navlink">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Blogs</a></li>

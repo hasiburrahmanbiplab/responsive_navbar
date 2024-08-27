@@ -1,5 +1,5 @@
-let nav = document.querySelector('.navbar');
+let navUl = document.querySelector('.navlink');
 let navHambergur = document.querySelector(".hambergur");
 navHambergur.addEventListener('click' , () =>{
-    nav.classList
+    navUl.classList.toggle('active')
 })
