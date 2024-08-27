@@ -26,14 +26,18 @@
         
         .navbar ul{
             width: 50%;
-            display: flex;
             padding: 20px;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             gap: 50px;
             background-color: aqua;
+            position: relative;
+            left: -100%;
+            display: none;
+            visibility: hidden;
         }
+        
         .navbar ul li a{
             font-size: 16px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -46,6 +50,9 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
         button .div-1{
             width: 30px;
@@ -53,6 +60,7 @@
             background-color: black;
             margin-bottom: 5px;
         }
+
 
     </style>
 </head>
@@ -67,7 +75,7 @@
         <li><a href="#">Help</a></li>
         <li><a href="#">Submit</a></li>
     </ul>
-    <button>
+    <button class="hambergur">
         <div class="div-1"></div>
         <div class="div-1"></div>
         <div class="div-1"></div>
