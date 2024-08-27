@@ -18,22 +18,40 @@
             list-style: none;
         }
         .navbar{
-            background-color: aqua;
-            width: 500px;
-            height: 50vh;
+            background-color: red;
+            width: 400px;
             margin: 0 auto;
-            padding: 20px;
+            position: relative;
         }
-       
+        
         .navbar ul{
+            width: 50%;
             display: flex;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             gap: 50px;
+            background-color: aqua;
         }
         .navbar ul li a{
             font-size: 16px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: 500;
             color: black;
+        }
+        button{
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        button .div-1{
+            width: 30px;
+            height: 2px;
+            background-color: black;
+            margin-bottom: 5px;
         }
 
     </style>
@@ -49,6 +67,11 @@
         <li><a href="#">Help</a></li>
         <li><a href="#">Submit</a></li>
     </ul>
+    <button>
+        <div class="div-1"></div>
+        <div class="div-1"></div>
+        <div class="div-1"></div>
+    </button>
 </div>
 
 
